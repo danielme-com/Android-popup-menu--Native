@@ -4,6 +4,7 @@
     <style name="dm" parent="android:Theme.Holo.Light">
         <item name="android:popupMenuStyle">@style/menu</item>
         <item name="android:dropDownListViewStyle">@style/dropDownListView.dm</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.dm</item>
     </style>
 
     <!-- default background -->
@@ -14,6 +15,10 @@
     <!-- selector for pressed/focused states -->
     <style name="dropDownListView.dm" parent="android:attr/selectableItemBackground">
         <item name="android:listSelector">@drawable/menu_selector</item>
+    </style>
+   
+    <style name="itemTextStyle.dm" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+       <item name="android:textColor">@drawable/menu_item_color</item>
     </style>
 
 </resources>
